@@ -1,0 +1,23 @@
+.header-apps {
+  padding-left: 20px;
+  background: #F18F01 !important;
+  border-radius: 10px;
+}
+
+.header-apps .font-apps {
+  color: white !important;
+  font-size: 1.4rem;
+}
+
+.header-apps a:hover {
+  color: #5a02ac !important;
+}
+
+.hr-purple {
+  background-color: #5E50A0;
+  height: 5px;
+  width: 100%;
+  top: 5px;
+  position: absolute;
+}
+/*# sourceMappingURL=custom.css.map */

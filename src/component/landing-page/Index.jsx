@@ -1,25 +1,24 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { getNews, getPost } from '../../actions'
-import Navbar from '../../lib/Navbar'
-import Sidebar from '../../lib/Sidebar'
+import Navbar from '../../lib/NavbarLandingPage'
 import ContentCalendar from './ContentCalendar'
 import ContentBox from './ContentBox'
-import ContentProduct from './ContentProduct'
-import Footer from '../../lib/Footer'
+import ContentOrder from './ContentOrder'
 
 class Index extends React.Component {
   render() {
     return (
       <div className="wrapper">
         <Navbar />
-        <Sidebar />
-        <div className="content-wrapper">
+        <div className="content" style={{ padding: 20 }}>
           <div className="content-header">
             <div className="container-fluid">
               <div className="row mb-2">
                 <div className="col-sm-6">
-                  <h1 className="m-0 text-dark">Selamat Datang Kembali</h1>
+                  <h1 className="m-0 text-dark">
+                    Selamat Datang Silahkan Login
+                  </h1>
                 </div>
                 <div className="col-sm-6">
                   <ol className="breadcrumb float-sm-right">
@@ -37,7 +36,7 @@ class Index extends React.Component {
               <ContentBox />
               <div className="row">
                 <section className="col-lg-7 connectedSortable">
-                  <ContentProduct />
+                  <ContentOrder />
                 </section>
                 <section className="col-lg-5 connectedSortable">
                   <ContentCalendar />
@@ -46,8 +45,6 @@ class Index extends React.Component {
             </div>
           </section>
         </div>
-
-        <Footer />
       </div>
     )
   }

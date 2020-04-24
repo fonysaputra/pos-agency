@@ -1,0 +1,27 @@
+$color:#F18F01;
+$purple:#5E50A0;
+
+.header-apps {
+    padding-left: 20px;
+    background: $color !important;
+    border-radius: 10px;
+
+    .font-apps {
+        color: white !important;
+        font-size: 1.4rem;
+
+
+    }
+
+    a:hover {
+        color: rgb(90, 2, 172) !important;
+    }
+}
+
+.hr-purple {
+    background-color: $purple;
+    height: 5px;
+    width: 100%;
+    top: 5px;
+    position: absolute;
+}
