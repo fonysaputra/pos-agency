@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Index() {
+  let [icon, setIcon] = useState('fas fa-eye')
+  let [type, setType] = useState('password')
+
+  let handlingShowPassword = () => {
+    if (type === 'password') {
+      setIcon('fas fa-eye-slash')
+      setType('text')
+    } else {
+      setIcon('fas fa-eye')
+      setType('password')
+    }
+  }
+
   return (
     <div className="hold-transition login-page">
       <div className="hr-purple"></div>
@@ -19,25 +32,28 @@ function Index() {
             <form>
               <div className="input-group mb-3">
                 <input
-                  type="email"
+                  type="text"
                   className="form-control"
-                  placeholder="Email"
+                  placeholder="Username"
                 />
                 <div className="input-group-append">
                   <div className="input-group-text">
-                    <span className="fas fa-envelope"></span>
+                    <span className="fas fa-user"></span>
                   </div>
                 </div>
               </div>
               <div className="input-group mb-3">
                 <input
-                  type="password"
+                  type={type}
                   className="form-control"
                   placeholder="Password"
                 />
                 <div className="input-group-append">
                   <div className="input-group-text">
-                    <span className="fas fa-lock"></span>
+                    <span
+                      onClick={() => handlingShowPassword()}
+                      className={icon}
+                    ></span>
                   </div>
                 </div>
               </div>

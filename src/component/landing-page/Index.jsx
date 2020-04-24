@@ -5,6 +5,7 @@ import Navbar from '../../lib/NavbarLandingPage'
 import ContentCalendar from './ContentCalendar'
 import ContentBox from './ContentBox'
 import ContentOrder from './ContentOrder'
+import Clock from '../../lib/Clock'
 
 class Index extends React.Component {
   render() {
@@ -39,7 +40,10 @@ class Index extends React.Component {
                   <ContentOrder />
                 </section>
                 <section className="col-lg-5 connectedSortable">
-                  <ContentCalendar />
+                  <div className="row">
+                    <ContentCalendar />
+                    <Clock />
+                  </div>
                 </section>
               </div>
             </div>

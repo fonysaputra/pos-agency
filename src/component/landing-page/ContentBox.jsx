@@ -13,7 +13,7 @@ function ContentBox() {
           <div className="icon">
             <i className="ion ion-bag"></i>
           </div>
-          <a href="#" className="small-box-footer">
+          <a href="login" className="small-box-footer">
             More info <i className="fas fa-arrow-circle-right"></i>
           </a>
         </div>
@@ -30,7 +30,7 @@ function ContentBox() {
           <div className="icon">
             <i className="ion ion-stats-bars"></i>
           </div>
-          <a href="#" className="small-box-footer">
+          <a href="login" className="small-box-footer">
             More info <i className="fas fa-arrow-circle-right"></i>
           </a>
         </div>
@@ -46,7 +46,7 @@ function ContentBox() {
           <div className="icon">
             <i className="ion ion-person-add"></i>
           </div>
-          <a href="#" className="small-box-footer">
+          <a href="login" className="small-box-footer">
             More info <i className="fas fa-arrow-circle-right"></i>
           </a>
         </div>
@@ -62,7 +62,7 @@ function ContentBox() {
           <div className="icon">
             <i className="ion ion-pie-graph"></i>
           </div>
-          <a href="#" className="small-box-footer">
+          <a href="login" className="small-box-footer">
             More info <i className="fas fa-arrow-circle-right"></i>
           </a>
         </div>
