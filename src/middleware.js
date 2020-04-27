@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import LandingPage from './component/landing-page/Index'
 import Login from './component/login/Index'
+import HomePage from "./component/Layout/Index"
 
 class Middleware extends Component {
   render() {
@@ -12,6 +13,7 @@ class Middleware extends Component {
           <Switch>
             <Route exact path="/" render={() => <LandingPage />} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/home-page" component={HomePage} />
             <Route exact path="*" component={LandingPage} />
           </Switch>
         </Router>

@@ -29,7 +29,7 @@ function Index() {
               />
             </p>
             <p className="login-box-msg">Login In System Pos Agency</p>
-            <form>
+            <form action="home-page">
               <div className="input-group mb-3">
                 <input
                   type="text"

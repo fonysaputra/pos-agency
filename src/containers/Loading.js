@@ -11,7 +11,7 @@ let Laoading = ({ loading }) =>
   ) : null
 
 const mapStateToProps = (state) => ({
-  loading: state.responseNews.loading || state.responsePost.loading,
+  loading: state.responseNews.loading || state.responsePost.loading || state.responseHome.loading,
 })
 
 Laoading = connect(mapStateToProps, null)(Laoading)
